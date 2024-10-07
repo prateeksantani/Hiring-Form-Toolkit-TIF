@@ -39,8 +39,8 @@ const InterviewDetailsForm: React.FC<{
           placeholder="Select interview mode"
           name="interviewMode"
           options={interviewModeOptions}
-          onChange={(name, value) => formik.setFieldValue(name, value)}
-          onBlur={(name) => formik.setFieldTouched(name, true)}
+          onChange={(name: string, value: any) => formik.setFieldValue(name, value)}
+          onBlur={(name: string) => formik.setFieldTouched(name, true)}
           value={formik.values.interviewMode}
           error={formik.errors.interviewMode}
           touched={formik.touched.interviewMode}
@@ -50,8 +50,8 @@ const InterviewDetailsForm: React.FC<{
           placeholder="Select interview duration"
           name="interviewDuration"
           options={interviewDurationOptions}
-          onChange={(name, value) => formik.setFieldValue(name, value)}
-          onBlur={(name) => formik.setFieldTouched(name, true)}
+          onChange={(name: string, value: any) => formik.setFieldValue(name, value)}
+          onBlur={(name: string) => formik.setFieldTouched(name, true)}
           value={formik.values.interviewDuration}
           error={formik.errors.interviewDuration}
           touched={formik.touched.interviewDuration}
@@ -61,8 +61,8 @@ const InterviewDetailsForm: React.FC<{
           name="interviewLanguage"
           placeholder="Select interview language"
           options={interviewLanguageOptions}
-          onChange={(name, value) => formik.setFieldValue(name, value)}
-          onBlur={(name) => formik.setFieldTouched(name, true)}
+          onChange={(name: string, value: any) => formik.setFieldValue(name, value)}
+          onBlur={(name: string) => formik.setFieldTouched(name, true)}
           value={formik.values.interviewLanguage}
           error={formik.errors.interviewLanguage}
           touched={formik.touched.interviewLanguage}
